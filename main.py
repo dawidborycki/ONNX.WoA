@@ -7,7 +7,7 @@ import torchvision.transforms as transforms
 
 def download_model(model_name):
     if not os.path.exists(model_name):
-        base_url = 'https://github.com/onnx/models/blob/main/validated/vision/classification/mnist/model/'
+        base_url = 'https://github.com/dawidborycki/ONNX.WoA/raw/refs/heads/main/models/'
         url = urllib.parse.urljoin(base_url, model_name)
         wget.download(url)
 
